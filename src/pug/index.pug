@@ -1,0 +1,144 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title DREAMSHARE
+  // Fontawesome CSS
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='./assets/styles/base/bootstrap.css')
+  // CSS
+  link(rel='stylesheet' href='./assets/styles/main.css')
+  // Custom Css
+// Header - set the background image for the header in the line below
+header.header.pb-5.mb-4(style="background-image: url('./assets/images/background-header.png');")
+  .header-menu
+    .fs-20.fw-bold.text-light.me-5.header-menu-text DREAMSHARE
+    .ms-5
+      button.btn.fs-14.fw-normal.text-light(type='button') Log in
+      button.btn.btn-outline-light.rounded-pill.fs-14.fw-normal(type='button') Sign up
+  .container.header-title
+    h2.text-light.fw-bolder.pt-10.text-center.fs-52.fw-bold.lh-2 SHARE YOUR
+    h2.text-light.fw-bolder.text-center.fs-52.fw-bold HOLIDAY DREAM
+    p.text-light.fs-24.mt-3.text-center
+      | And find the perfect partner to fullfill it
+    .text-center
+      button.btn.btn-danger.rounded-pill.fs-14.fw-bold.mt-4(type='button')
+        | Find your holiday
+        | partner
+// Dreamshare section
+.content
+  section.container.container-dreamshare
+    .pt-3.pb-5
+      h3.mt-5.fs-26.text-center How Dreamshare works?
+      .step.row
+        .step-img(style="background-image: url('./assets/images/step1.png')")
+          button.step-btn.text-center(type='button') STEP 1
+          h4.fs-24.fw-bold Sed leo enim, condimentum
+          p.fs-14.fw-light
+            | Quisque libero libero, dictum non turpis in, luctus semper
+            | lorem. Donec rhoncus a leo sit
+            | amet facilisis.
+        .step-img-middle(style="background-image: url('./assets/images/step2.png')")
+          button.step-btn.text-center(type='button') STEP 2
+          h4.fs-24.fw-bold Morbi velit risus
+          p.fs-14.fw-light
+            | Nulla venenatis tempor dui in molestie. Nulla quis dictumpurus, sit
+            | amet porttitor est.
+        .step-img(style="background-image: url('./assets/images/step3.png')")
+          button.step-btn.text-center.fs-10(type='button') STEP 3
+          h4.fs-24.fw-bold Sed leo enim, condimentum
+          p.fs-14.fw-light
+            | Quisque libero libero, dictum non turpis in, luctus semper
+            | lorem.
+            | Donec rhoncus a leo sit
+            | amet facilisis.
+  // Members section
+  section.container.mt-4.pt-2
+    .row.container-members
+      h3.text-center Meet a partner for your best holiday
+      .mt-2.pt-3.text-center.members
+        .memb-first
+          img.img-fluid(src='./assets/images/avatar.png')
+          h6.fs-14.fw-bold Bradley Hunter
+          p.fs-14.fw-light Based in Chicago. I love playing tennis and loud music.
+        .memb
+          img.img-fluid(src='./assets/images/avatar-2.png')
+          h6.fs-14.fw-bold Diana Wells
+          p.fs-14.fw-light
+            | Living in Athens, Greece. I love black and white classics,
+            | chillout music and green tea.
+        .memb
+          img.img-fluid(src='./assets/images/avatar-1.png')
+          h6.fs-14.fw-bold Marie Bennett
+          p.fs-14.fw-light
+            | Currently living in Colorado. Lover of art, languages and
+            | travelling.
+        .memb
+          img.img-fluid(src='./assets/images/avatar-3.png')
+          h6.fs-14.fw-bold Christopher Pierce
+          p.fs-14.fw-light
+            | Star Wars fanatic. I have a persistent enthusiasm to create new
+            | things.
+      .fs-5.text-center
+        button.btn.btn-outline-danger.fs-14.fw-bold.members-bnt(type='button')
+          | See other
+          | partners
+  // Discover activity section
+  section
+    .discovery
+      div
+        h3.text-center.text-dark.mt-5.mb-4 Discover holiday activity ideas
+      .row
+        .discovery-img-small.discovery-sm-1(style="background-image: url('./assets/images/sport.png');")
+          span Sports and Activis
+        .discovery-img-small.discovery-sm-2(style="background-image: url('./assets/images/healath.png')")
+          span Wellness and Health
+        .discovery-img-small.pl-40(style="background-image: url('./assets/images/extreme.png')")
+          span Extreme Sports and Expeditions
+      .row
+        .discovery-img-small.discovery-sm-3(style="background-image: url('./assets/images/game.png')")
+          span Games
+        .discovery-img-big(style="background-image: url('./assets/images/culture.png')")
+          span Culture and Education
+      .row
+        .discovery-img-big(style="background-image: url('./assets/images/massage.png')")
+          span Enjomet and Relaxation
+        .discovery-img-small.discovery-sm-4(style="background-image: url('./assets/images/mountains.png')")
+          span Trevelling
+  // Input section
+  section
+    .container.my-5.pt-2.pb-5.create-activity
+      .row.my-4
+        h3.text-center Create your holiday activity
+      p.text-center.fs-18.fw-light Hi! What are your holiday interests?
+      .text-center.d-flex.justify-content-center.mt-4.create-activity-area
+        .text-center
+          input.create-activity-input(type='text' placeholder='Enter your insterests')
+        .text-center
+          button.btn.btn-danger.rounded-pill.fs-14.fw-bold.create-activity-btn(type='button')
+            | Search
+            | partners
+  hr(style='color: red; height: 2px;')
+// Footer
+footer
+  .container.footer
+    .footer-logo
+      h4.fs-16.text-center.text-lg-start.text-danger DREAMSHARE
+    .footer-menu
+      h6.fs-14.fw-bold Company
+      .footer-company
+        .fs-14.fw-light About
+        .fs-14.fw-light Contact
+        .fs-14.fw-light Press
+        .fs-14.fw-light Blog
+        .fs-14.fw-light Terms and Privacy
+        .fs-14.fw-light Help
+    .footer-partners
+      h6.fs-14.fw-bold Partners
+    .footer-logo2
+      h6 DESIGNED BY
+      .fs-5
+        img(src='./assets/images/bitmap.png' alt='')

@@ -1,0 +1,728 @@
+// Шрифт-----------------------------------------------------------
+@import './base/fonts';
+
+// Reset-----------------------------------------------------------
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Mixin------------------------------------------------------------
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// Body-------------------------------------------------------------
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Hedader----------------------------------------------------------
+.header {
+  background-position-x: center;
+  min-height: 100%;
+  min-height: 700px;
+  max-width: 1440px;
+  padding-top: 40px;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  &-menu {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
+
+
+// Step----------------------------------------------------------
+.step {
+  margin-top: 35px;
+  margin-bottom: 10px;
+
+  &-img {
+    width: 300px;
+    max-height: 400px;
+    color: white;
+    padding: 2rem;
+    padding-top: 215px !important;
+
+
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 14px !important;
+    }
+  }
+
+  &-img-middle {
+    @extend .step-img;
+    padding-top: 245px !important;
+    margin: 0 20px;
+  }
+
+  &-btn {
+    margin-bottom: 24px;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    @include size(70px, 20px);
+  }
+}
+
+
+// Members----------------------------------------------------------
+.members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .memb {
+    width: 221px;
+    margin-left: 15px;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    h6 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .memb-first {
+    @extend .memb;
+    margin-left: 0px;
+  }
+
+  &-bnt {
+    @include size(180px, 40px);
+    border-radius: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+
+// Discovery----------------------------------------------------------
+.discovery {
+  text-align: center;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+
+  &-img-small {
+    @include size(300px, 310px);
+    border-radius: 4px;
+    margin: 10px;
+
+    span {
+      position: relative;
+      top: 45%;
+    }
+  }
+
+  &-img-big {
+    @include size(620px, 310px);
+    border-radius: 4px;
+    margin: 10px;
+
+    span {
+      position: relative;
+      top: 45%;
+    }
+  }
+}
+
+
+// Creste activity----------------------------------------------------------
+.create-activity {
+  p {
+    font-family: "Roboto";
+    font-size: 18px !important;
+    margin-top: 40px;
+  }
+
+  &-input {
+    @include size(299px, 40px);
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  &-btn {
+    @include size(172.12px, 40px);
+  }
+}
+
+// Footer----------------------------------------------------------
+.footer {
+  height: 224px;
+  display: flex;
+  margin-top: 40px;
+
+  &-logo {
+    margin-left: 13.5%;
+
+    h4 {
+      @include size(119px, 20px);
+      font-family: 'Montserrat' !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px !important;
+      line-height: 20px;
+      margin-top: 0 !important;
+    }
+  }
+
+  &-company {
+    div {
+      color: #999999;
+    }
+  }
+
+  &-menu {
+    margin-left: 9.5%;
+
+    div {
+      margin-bottom: 5px;
+    }
+
+    h6 {
+      margin-bottom: 13px;
+    }
+  }
+
+  &-partners {
+    margin-left: 8.5%;
+  }
+
+  &-logo2 {
+    margin-left: 22.5%;
+
+    h6 {
+      color: #CCCCCC !important;
+      font-size: 10px !important;
+      margin-bottom: 0 !important;
+      font-weight: 700;
+      margin-left: 35px;
+    }
+  }
+}
+
+
+
+// Extra css--------------------------------------------------------------------
+
+.row {
+  display: flex;
+  justify-content: center;
+
+}
+
+.container {
+  h2 {
+    margin-bottom: 0 !important;
+  }
+
+  p {
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 25px !important;
+  }
+}
+
+h3 {
+  font-size: 1.625rem !important;
+  font-weight: bold;
+}
+
+.mt-10 {
+  margin-top: 7rem !important;
+}
+
+.pt-10 {
+  padding-top: 9.3rem !important;
+}
+
+.fs-10 {
+  font-size: 0.625rem !important;
+  line-height: 12px;
+}
+
+.fs-14 {
+  font-size: 0.875rem !important;
+}
+
+.fs-20 {
+  font-size: 1.25rem !important;
+}
+
+.fs-24 {
+  font-size: 1.5rem !important;
+}
+
+.fs-26 {
+  font-size: 26px !important;
+}
+
+.fs-52 {
+  font-size: 3.25rem !important;
+}
+
+.mt-6 {
+  margin-top: 2.5rem;
+}
+
+.mt-7 {
+  margin-top: 2.65rem !important;
+}
+
+.pl-40 {
+  padding: 40px;
+}
+
+// ----------------------------------------------------MEDIA--------------------------------------------------------------
+// Tablet
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+
+  .header {
+    min-height: 700px;
+    max-width: 768px;
+    padding-top: 40px;
+  }
+
+  .container-dreamshare {
+    h3 {
+      font-size: 22px !important;
+    }
+  }
+
+  .step {
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    &-img {
+      width: 236px;
+      max-height: 400px;
+      padding-top: 185px !important;
+    }
+
+    &-img-middle {
+      width: 236px;
+      max-height: 400px;
+      padding-top: 225px !important;
+      margin: 0 16px;
+    }
+  }
+
+  .members {
+    .memb {
+      width: 237px;
+      margin: 8px 10px 15px;
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      h6 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .memb-first {
+      width: 236px;
+    }
+  }
+
+  .discovery {
+
+    &-img-small {
+      @include size(236px, 310px);
+    }
+
+    &-img-big {
+      @include size(492px, 310px);
+    }
+  }
+
+  .footer {
+    height: 224px;
+    display: flex;
+    margin-top: 40px;
+
+    &-logo {
+      margin-left: 0;
+
+      h4 {
+        margin-top: 0 !important;
+        margin-left: 10px;
+
+      }
+    }
+
+    &-menu {
+      margin-left: 17.5%;
+
+    }
+
+    &-partners {
+      margin-left: 5.5%;
+    }
+
+    &-logo2 {
+      margin-left: 17.5%;
+
+    }
+  }
+
+  .container-members {
+    h3 {
+      margin-top: 13px;
+    }
+  }
+
+  h3 {
+    font-size: 22px !important;
+  }
+
+  .container {
+    padding: 0 !important;
+
+    p {
+      line-height: 14px !important;
+    }
+  }
+
+  .create-activity {
+    margin-top: 90px !important;
+
+    p {
+      margin-top: 45px !important;
+    }
+  }
+
+  hr {
+    margin-top: 100px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+
+  .header {
+    min-height: 540px;
+    // max-width: 320px;
+    padding: 20px;
+    margin-bottom: 18px !important;
+    background-size: cover;
+
+    &-menu {
+      display: block;
+
+      &-text {
+        position: absolute;
+        top: 9.3rem;
+        left: 30%;
+      }
+
+      div {
+        margin-left: 0 !important
+      }
+
+      button {
+        @include size(90px, 36px);
+      }
+    }
+
+    &-title {
+      button {
+        @include size(280px, 40px);
+        margin-top: 0 !important;
+      }
+
+      h2 {
+        font-size: 30px !important;
+        line-height: 37px;
+      }
+
+      p {
+        font-size: 18px !important;
+        line-height: 24px !important;
+        margin: 5px 5px 16px !important;
+
+      }
+    }
+  }
+
+  .container-dreamshare {
+    h3 {
+      margin-top: 0 !important;
+    }
+
+    div {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  .step {
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    &-img {
+      width: 300px;
+      height: 240px;
+      padding-top: 58px !important;
+      padding-left: 20px !important;
+      margin-top: 10px;
+      background-size: cover;
+
+      h4 {
+        line-height: 14px !important;
+      }
+
+      button {
+        margin-bottom: 45px;
+      }
+    }
+
+    &-img-middle {
+      width: 300px;
+      height: 240px;
+      padding-top: 87px !important;
+      padding-left: 20px !important;
+      margin-top: 10px;
+
+      button {
+        margin-bottom: 35px;
+      }
+    }
+
+    &-img:nth-child(1) {
+      background-image: url('../images/step1-mobile.png') !important;
+    }
+
+    &-img:nth-child(2) {
+      background-image: url('../images/step2-mobile.png') !important;
+    }
+
+    &-img:nth-child(3) {
+      background-image: url('../images/step3-mobile.png') !important;
+    }
+  }
+
+
+  .container-members {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .members {
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+
+    .memb {
+      width: 236px;
+      height: 205px;
+      margin: 2px 10px 15px;
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      h6 {
+        margin-bottom: 20px;
+      }
+
+    }
+
+    .memb:nth-child(2) {
+      height: 224px;
+    }
+
+    .memb-first {
+      width: 236px;
+    }
+
+  }
+
+  .members-bnt {
+    width: 280px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .discovery {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &-img-small,
+    &-img-big {
+      @include size(300px, 120px);
+      margin-bottom: 0;
+      padding: 0;
+
+      span {
+        top: 30%;
+      }
+    }
+
+    &-img-small:nth-child(1),
+    &-img-small:nth-child(2),
+    &-img-small:nth-child(3) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &-img-big:nth-child(1) {
+      background-image: url('../images/culture-mobile.png') !important;
+    }
+
+    &-img-big:nth-child(2) {
+      background-image: url('../images/massage-mobile.png') !important;
+    }
+
+    &-sm-1 {
+      background-image: url('../images/sport-mobile.png') !important;
+    }
+
+    &-sm-2 {
+      background-image: url('../images/healath-mobile.png') !important;
+    }
+
+    &-sm-3 {
+      background-image: url('../images/games-mobile.png') !important;
+    }
+
+    &-sm-4 {
+      background-image: url('../images/mountains-mobile.png') !important;
+    }
+
+    &-img-small:nth-child(3) {
+      background-image: url('../images/extreme-mobile.png') !important;
+    }
+
+    h3 {
+      margin: 0 13px 17px !important;
+    }
+
+  }
+
+  discovery-img-small:nth-child(1) {
+    background-image: url('../images/sport-mobile.png') !important;
+  }
+
+  .create-activity {
+    margin-top: 38px !important;
+
+    p {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    h3{
+      width: 280px;
+    }
+
+    div:nth-child(1) {
+      margin: 11px !important;
+    }
+
+    &-area {
+      display: block !important;
+      text-align: center;
+      margin-top: 10px !important;
+    }
+
+    &-input {
+      @include size(280px, 40px);
+      margin-right: 0;
+    }
+
+    &-btn {
+      @include size(280px, 40px);
+    }
+
+
+  }
+
+  hr {
+    margin-top: 0;
+  }
+
+  .footer {
+
+    height: 204px;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 22px;
+
+    &-company {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: auto;
+      width: 280px;
+
+      div {
+        margin-right: 5px;
+        font-size: 14px !important;
+      }
+    }
+
+    &-logo {
+      text-align: center;
+      margin-left: 0 !important;
+
+      h4 {
+        margin: auto;
+        margin-bottom: 5px;
+      }
+    }
+
+    &-menu {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &-partners {
+      margin-left: 0;
+    }
+
+    &-logo2 {
+      margin-left: 0;
+
+      h6 {
+        margin-left: 0;
+      }
+    }
+  }
+  .container{
+    p{
+      line-height: 14px;
+    }
+  }
+
+
+}
